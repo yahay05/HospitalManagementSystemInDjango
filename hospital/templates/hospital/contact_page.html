@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .mydivstyle{
+        display:block;
+        transition: 0.35s all ease;
+        padding: 8px;
+        border-radius:7px;
+        margin-top: 5px;
+    }
+    .mydivstyle:hover{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-7px);
+    }
+    .myparagraphstyle{
+        margin-bottom: 0;
+    }
+</style>
+<div class="container">
+    <h1 class="text-center mt-5">Contact Us</h1>
+    <div class="row mt-5 text-center">
+        <div class="col-lg-3 mydivstyle">
+            <h3><i class="fa fa-phone-square mr-2"></i>Contact</h3>
+            <p class="font-weight-bold myparagraphstyle"><a href="tel:+994778665523">+994778665523</a></p>
+        </div>
+        <div class="col-lg-3 mydivstyle">
+            <h3><i class="fa fa-envelope mr-2"></i>Send Email</h3>
+            <p class="font-weight-bold myparagraphstyle"><a href="mailto:google@gmail.com">google@gmail.com</a></p>
+        </div>
+        <div class="col-lg-3 mydivstyle">
+            <h3><i class="fa fa-address-card mr-2"></i>Office Address</h3>
+            <p class="font-weight-bold myparagraphstyle"><a target="_blank" href="https://www.google.com/maps/place/Google+NYC:+8510+Building/@40.7434001,-74.2881238,11z/data=!4m9!1m2!2m1!1sgoogle+office!3m5!1s0x89c259c0b6279809:0xf0f85f5d47fed64c!8m2!3d40.7434001!4d-74.0079724!15sCg1nb29nbGUgb2ZmaWNlIgOIAQFaDyINZ29vZ2xlIG9mZmljZZIBEGNvcnBvcmF0ZV9vZmZpY2WaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTkRkMWt6V0RWM1JSQULgAQA">Google,NYC</a></p>
+        </div>
+        <div class="col-lg-3 mydivstyle">
+            <h3><i class="fa fa-address-card mr-2"></i>Ofice Work Time</h3>
+            <p class="myparagraphstyle">8AM to 10PM</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
